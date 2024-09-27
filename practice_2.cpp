@@ -10,8 +10,8 @@ class Rectangle {
             breadth = 0;
         }
         Rectangle(double l, double b) {
-            length = l;
-            breadth = b;
+            this->length = l;
+            this->breadth = b;
         }
         
         double calculateArea() {
@@ -30,9 +30,9 @@ class Triangle {
         }
 
         Triangle(double a, double b, double c) {
-            side1 = a;
-            side2 = b;
-            side3 = c;
+            this->side1 = a;
+            this->side2 = b;
+            this->side3 = c;
         }
         
         double calculatePerimeter() {
