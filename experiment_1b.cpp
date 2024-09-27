@@ -105,31 +105,36 @@ int main() {
                 cout << "Enter Account Number: ";
                 cin >> accNo;
                 found = false;
-                for (int i = 0; i < numAccounts; i++) {
+                if (!found) {
+                    cout << "Account not found!\n";
+                }
+                else {
+                    for (int i = 0; i < numAccounts; i++) {
                     if (accounts[i].accNo == accNo) {
                         accounts[i].depositMoney();
                         found = true;
                         break;
                     }
                 }
-                if (!found) {
-                    cout << "Account not found!\n";
                 }
+                
                 break;
 
             case 3:
                 cout << "Enter Account Number: ";
                 cin >> accNo;
                 found = false;
-                for (int i = 0; i < numAccounts; i++) {
+                if (!found) {
+                    cout << "Account not found!\n";
+                }
+                else {
+                    for (int i = 0; i < numAccounts; i++) {
                     if (accounts[i].accNo == accNo) {
                         accounts[i].withdrawMoney();
                         found = true;
                         break;
                     }
-                }
-                if (!found) {
-                    cout << "Account not found!\n";
+                    }
                 }
                 break;
 
@@ -137,15 +142,17 @@ int main() {
                 cout << "Enter Account Number: ";
                 cin >> accNo;
                 found = false;
-                for (int i = 0; i < numAccounts; i++) {
+                if (!found) {
+                    cout << "Account not found!\n";
+                }
+                else {
+                    for (int i = 0; i < numAccounts; i++) {
                     if (accounts[i].accNo == accNo) {
-                        accounts[i].displayAccount();
+                        accounts[i].depositMoney();
                         found = true;
                         break;
                     }
-                }
-                if (!found) {
-                    cout << "Account not found!\n";
+                    }
                 }
                 break;
 
@@ -153,15 +160,17 @@ int main() {
                 cout << "Enter Account Number: ";
                 cin >> accNo;
                 found = false;
-                for (int i = 0; i < numAccounts; i++) {
+                if (!found) {
+                    cout << "Account not found!\n";
+                }
+                else {
+                    for (int i = 0; i < numAccounts; i++) {
                     if (accounts[i].accNo == accNo) {
-                        accounts[i].modifyAccount();
+                        accounts[i].depositMoney();
                         found = true;
                         break;
                     }
                 }
-                if (!found) {
-                    cout << "Account not found!\n";
                 }
                 break;
 
