@@ -1,5 +1,4 @@
 #include<iostream>
-#include<string>
 using namespace std;
 
 struct BankAccount {
@@ -28,10 +27,9 @@ void BankAccount::createAccount() {
     cout << "Enter Account Number: ";
     cin >> accNo;
     cout << "Enter Account Holder's Name: ";
-    cin.ignore();
-    getline(cin, name);
+    cin>>name;
     cout << "Enter Address: ";
-    getline(cin, address);
+    cin>>address;
     cout << "Enter Account Type (s for saving / c for current): ";
     cin >> accType;
     cout << "Enter Initial Deposit Amount: ";
@@ -69,10 +67,9 @@ void BankAccount::displayAccount() {
 
 void BankAccount::modifyAccount() {
     cout << "Enter New Name: ";
-    cin.ignore();
-    getline(cin, name);
+    cin>>name;
     cout << "Enter New Address: ";
-    getline(cin, address);
+    cin>>address;
     cout << "Enter New Account Type (s for saving / c for current): ";
     cin >> accType;
     cout << "Account modified successfully!\n";
