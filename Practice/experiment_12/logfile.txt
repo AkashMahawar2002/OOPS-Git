@@ -1,0 +1,4 @@
+[2023-12-1 10:00:00] Application started
+[2023-12-1 10:00:05] error: Connection Failed
+[2023-12-1 10:10:00] error: Database error
+[2023-12-1 10:015:00] warning: Close the Application
